@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'sim', loadChildren: './sim/sim.module#SimPageModule' },
+  { path: 'geoloc', loadChildren: './geoloc/geoloc.module#GeolocPageModule' }
 ];
 
 @NgModule({

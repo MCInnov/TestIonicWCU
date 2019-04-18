@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>sim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button shape="round" expand="block" size="default" fill="solid" color="primary" (click)="getDataSim()">Get Sim Info
+  </ion-button>
+  <p>
+    Data Sim : {{dataSim}}
+  </p>
+
+
+  <ion-card *ngFor="let carte of dataSim.cards; let i = index">
+    <ion-card-header>
+      <ion-card-title>Carte {{i}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>IMSI : {{dataSim.subscriberId}}</p>
+      <p>IMEI : {{carte.deviceId}}</p>
+      <p>Nom de l'opérateur : {{carte.carrierName}}</p>
+      <p>Slot : {{carte.simSlotIndex}}</p>
+      <p>Numéro de téléphone : {{dataSim.phoneNumber}}</p>
+    </ion-card-content>
+  </ion-card>
+
+ 
+
+</ion-content>

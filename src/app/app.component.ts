@@ -19,6 +19,14 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },{
+      title: 'Sim',
+      url: '/sim',
+      icon: 'logo-rss'
+    },{
+      title: 'Géolocalisation',
+      url: '/geoloc',
+      icon: 'pin'
     }
   ];
 

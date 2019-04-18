@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>geoloc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button shape="round" expand="block" size="default" fill="solid" color="primary" (click)="getLocation()">Get Geoloc Info
+  </ion-button>
+  <p>Latitude : {{location.lat}}</p>
+  <p>Longitude : {{location.lon}}</p>
+
+</ion-content>
